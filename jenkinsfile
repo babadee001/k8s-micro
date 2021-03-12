@@ -24,9 +24,11 @@ pipeline{
               sh '''
                   if [ $GIT_BRANCH = "staging" ] ; then
                       export CONTAINER=staging
+                      export env=staging
                       export PORT=3000
                   elif [ $GIT_BRANCH = "main" ] ; then
                       export CONTAINER=prod
+                      export env=production
                       export PORT=3001
                   fi
                   docker-compose up --build --force-recreate --no-deps -d ${CONTAINER}
