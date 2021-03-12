@@ -1,0 +1,25 @@
+
+version: "3.7"
+services:
+  staging:
+    image: microservice:staging
+    container_name: staging
+    ports:
+      - ${PORT}:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      - PORT=${PORT}
+      - ENV=staging
+  prod:
+    image: microservice:prod
+    container_name: prod
+    ports:
+      - ${PORT}:3001
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      - PORT=${PORT}
+      - ENV=production
