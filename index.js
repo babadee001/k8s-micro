@@ -11,7 +11,7 @@ app.use('/', JokesRouter);
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send(`Welcome to scalac microservice. This is ${process.env.env}`);
+  res.send(`Welcome to scalac microservice. This is ${process.env.ENV}`);
 });
 
 app.get('*', (req, res) => {
