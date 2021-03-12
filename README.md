@@ -16,7 +16,7 @@ This service gets jokes from `bash.org.pl`
 
 production:  http://35.178.207.174:3001
 
-development:   http://35.178.207.174:3000
+staging:   http://35.178.207.174:3000
 
 
 # Improvements
