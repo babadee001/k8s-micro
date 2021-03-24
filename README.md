@@ -14,9 +14,9 @@ This service gets jokes from `bash.org.pl`
 
 # URLs
 
-production:  http://35.178.207.174:3001
+production:  http://18.133.220.7:3001
 
-staging:   http://35.178.207.174:3000
+staging:   http://18.133.220.7:3000
 
 
 # Improvements
